@@ -50,6 +50,22 @@ navTabs.forEach(tab => {
 
 // Scrollspy Logic: Highlights items dynamically depending on active window viewpoint
 function scrollSpy() {
+    // If we're at (or extremely close to) the bottom of the page,
+    // always highlight the last section.
+    if (
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 5
+    ) {
+        navTabs.forEach(tab => tab.classList.remove('active'));
+
+        const lastTab = document.querySelector('.tabs .tab[href="#certifications"]');
+        if (lastTab) {
+            lastTab.classList.add('active');
+        }
+
+        return;
+    }
+
     let currentSectionId = 'about';
     const triggerOffset = 180; // Triggers active highlight a little before passing the section top boundary
 
