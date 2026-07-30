@@ -37,23 +37,16 @@
                     <label class="theme-switch-wrapper" for="theme-toggle">
                         <input type="checkbox" id="theme-toggle" aria-label="Toggle Theme" />
                         <div class="theme-slider">
-                            <!-- Moon Icon (Visible when Dark/Unchecked) -->
-                            <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                            </svg>
-                            <!-- Sun Icon (Visible when Light/Checked) -->
-                            <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="5"></circle>
-                                <line x1="12" y1="1" x2="12" y2="3"></line>
-                                <line x1="12" y1="21" x2="12" y2="23"></line>
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                <line x1="1" y1="12" x2="3" y2="12"></line>
-                                <line x1="21" y1="12" x2="23" y2="12"></line>
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                            </svg>
-                            <span class="switch-handle"></span>
+                            <span class="slider-knob"></span>
+                            <div class="icons-container">
+                                <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"></path>
+                                </svg>
+                            </div>
                         </div>
                     </label>
                 </div>
@@ -125,11 +118,11 @@
                     <p class="typewriter" style="--delay: 0.5s">
                         > Designing and maintaining integrated automation frameworks using Cypress, Playwright, and k6, which bridge UI and performance testing to accelerate CI/CD feedback loops and improve testing ROI
                     </p>
-                    <p class="typewriter" style="--delay: 1.0s">
-                        > Implementing AI-driven QA workflows using Gemini, Claude, and Amazon Q to multiply productivity via autonomous test generation and resilient selector analysis to minimize test flakiness
+                    <p class="typewriter" style="--delay: 1s">
+                        > Facilitating high-velocity delivery as a PSM II Certified Scrum Master by actively removing technical impediments and refining requirements to ensure predictable, high-quality releases
                     </p>
                     <p class="typewriter" style="--delay: 1.5s">
-                        > Facilitating high-velocity delivery as a PSM II Certified Scrum Master by actively removing technical impediments and refining requirements to ensure predictable, high-quality releases
+                        > Implementing AI-driven QA workflows using Gemini, Claude, and Amazon Q to multiply productivity via autonomous test generation and resilient selector analysis to minimize test flakiness
                     </p>
                 </div>
 
@@ -221,25 +214,6 @@
                                 </a>
                             </div> 
 
-                             <!-- PlayCynk Migration tool between Cypress and Playwright -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://playcynk.vercel.app/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/playcynk-app/refs/heads/main/images/social-share.jpeg"
-                                            alt="PlayCynk Test Parity Engine">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">PlayCynk</h3>
-                                            <p class="card-subtitle">Cypress ↔ Playwright Converter</p>
-                                        </div>
-                                        <p class="card-description">Automates framework migration by transforming test suites between Cypress and Playwright using real-time structural analysis and POM generation</p>
-                                    </div>
-                                </a>
-                            </div>
-
                             <!-- AI-Powered WCAG Accessibility Auditor Github Link -->
                             <div class="portfolio-item carousel-slide">
                                 <a href="https://eugenrof.github.io/wcag-auditor/" target="_blank"
@@ -311,6 +285,25 @@
                                             <p class="card-subtitle">Automation Repair Utility</p>
                                         </div>
                                         <p class="card-description">An automation repair utility that analyzes DOM snapshots to suggest alternative Cypress/Playwright selectors, helping to reduce test flakiness and maintenance overhead</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- PlayCynk Migration tool between Cypress and Playwright -->
+                            <div class="portfolio-item carousel-slide">
+                                <a href="https://playcynk.vercel.app/" target="_blank"
+                                    class="portfolio-link clean-link">
+                                    <div class="image-wrapper">
+                                        <img src="https://raw.githubusercontent.com/eugenrof/playcynk-app/refs/heads/main/images/social-share.jpeg"
+                                            alt="PlayCynk Test Parity Engine">
+                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <div class="card-header">
+                                            <h3 class="card-title">PlayCynk</h3>
+                                            <p class="card-subtitle">Cypress ↔ Playwright Converter</p>
+                                        </div>
+                                        <p class="card-description">Automates framework migration by transforming test suites between Cypress and Playwright using real-time structural analysis and POM generation</p>
                                     </div>
                                 </a>
                             </div>
@@ -554,7 +547,7 @@
                 &copy; 2026 | Eugen Rof
             </div>
             <div class="footer-links">
-                <a href="https://github.com/eugenrof/profile_cv" target="_blank">GitHub</a>
+                <a href="https://github.com/eugenrof/profile_cv" target="_blank">GitHub Source</a>
                 <a href="mailto:eugenrof@gmail.com">Contact</a>
             </div>
         </div>
