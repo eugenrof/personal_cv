@@ -877,7 +877,7 @@ main ul li {
     box-shadow: 0 6px 16px rgba(58, 134, 255, 0.4);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .sticky-header-container {
         position: -webkit-sticky;
         position: sticky;
