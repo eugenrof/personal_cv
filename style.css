@@ -312,7 +312,7 @@ header h1 {
 
 .subtitle span {
     display: block;
-    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    font-size: clamp(0.65rem, 2.2vw, 1rem);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -960,23 +960,23 @@ main ul li {
         align-items: flex-start;
         text-align: left;
         flex: 0 1 auto;
-        min-width: 0; /* Allows flex child to shrink properly */
+        min-width: 0;
     }
 
     header h1 {
-        white-space: normal; /* Allow name to wrap if needed */
+        white-space: normal;
         word-break: break-word;
     }
 
     .subtitle span {
-        white-space: normal; /* Allow subtitle lines to wrap nicely on mobile */
-        overflow: visible;
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: clip;
     }
 
     .profile-photo {
-        width: 110px;
-        height: 110px;
+        width: 88px;
+        height: 88px;
     }
 
     .contact-icons {
