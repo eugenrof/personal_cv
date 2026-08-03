@@ -1227,3 +1227,29 @@ main, .card, .portfolio-info {
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--border-color);
 }
+
+body:not(.light) .header-info .section-label {
+    color: rgb(76, 201, 240);
+}
+
+body.light .header-info .section-label {
+    color: rgb(0, 86, 179);
+}
+
+/* Prevent text overflow on mobile by allowing roles to wrap cleanly */
+.header-info .subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .header-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-info .subtitle span {
+        font-size: 0.85rem;
+    }
+}
