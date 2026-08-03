@@ -1228,98 +1228,6 @@ main, .card, .portfolio-info {
     border: 1px solid var(--border-color);
 }
 
-.contact-section {
-    width: 100%;
-    max-width: 900px;
-    margin: 3rem auto;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.terminal-status {
-    color: #38bdf8;
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-}
-
-.terminal-output {
-    color: #64748b;
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-}
-
-.terminal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-label {
-    color: #94a3b8;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.form-label .prompt {
-    color: #38bdf8;
-}
-
-.terminal-input {
-    background: #020617;
-    border: 1px solid #1e293b;
-    border-radius: 6px;
-    padding: 0.75rem 1rem;
-    color: #f8fafc;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.95krem;
-    transition: all 0.2s ease;
-    resize: vertical;
-}
-
-.terminal-input:focus {
-    outline: none;
-    border-color: #38bdf8;
-    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.15);
-}
-
-.terminal-input::placeholder {
-    color: #475569;
-}
-
-.form-actions {
-    margin-top: 0.5rem;
-}
-
-.btn-terminal {
-    background: #020617;
-    color: #38bdf8;
-    border: 1px solid #38bdf8;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.2s ease;
-}
-
-.btn-terminal:hover {
-    background: #38bdf8;
-    color: #020617;
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
-}
-
 /* Header Terminal Label & Layout Rules */
 .header-info .identity-group {
     margin-bottom: 0;
@@ -1379,5 +1287,275 @@ body.light .header-info .section-label {
 
     .header-info .subtitle span {
         font-size: 0.75rem; /* Scaled down specifically for small screens so "(PSM II)" fits completely */
+    }
+}
+
+/*Contact Section*/
+/* Isolated contact section styling */
+.contact-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 4rem auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 1rem;
+}
+
+/* Base Terminal Window (Dark Mode Default) */
+.contact-section .terminal-window {
+    background: var(--card-bg, #0b0f19);
+    border: 1px solid var(--border-color, #1e293b);
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.contact-section .terminal-bar {
+    background: var(--terminal-bar-bg, #111827);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-color, #1e293b);
+}
+
+.contact-section .terminal-dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.contact-section .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.contact-section .dot.red { background: #ef4444; }
+.contact-section .dot.yellow { background: #f59e0b; }
+.contact-section .dot.green { background: #10b981; }
+
+.contact-section .terminal-title {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.contact-section .terminal-content {
+    padding: 2rem;
+}
+
+.contact-section .terminal-comment {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1.75rem;
+    border-left: 2px solid #334155;
+    padding-left: 0.75rem;
+}
+
+.contact-section .terminal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contact-section .form-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.contact-section .prompt {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.contact-section .label-text {
+    color: #cbd5e1;
+}
+
+/* Input Styling */
+.contact-section .terminal-input {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    color: #f8fafc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    width: 100%;
+    transition: all 0.2s ease;
+    resize: vertical;
+}
+
+.contact-section .terminal-input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.contact-section .terminal-input::placeholder {
+    color: #64748b;
+}
+
+.contact-section .form-actions {
+    margin-top: 1.5rem;
+}
+
+.contact-section .btn-terminal-submit {
+    background: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.contact-section .btn-terminal-submit:hover {
+    background: #38bdf8;
+    color: #030712;
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+.contact-section .btn-terminal-submit:hover .btn-prompt {
+    color: #030712;
+}
+
+.contact-section .btn-terminal-submit .btn-prompt {
+    color: #38bdf8;
+}
+
+/* Light Theme Adaptations (only applied when body.light is active) */
+body.light .contact-section .terminal-window {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+body.light .contact-section .terminal-bar {
+    background: #f1f5f9;
+    border-bottom-color: #cbd5e1;
+}
+
+body.light .contact-section .terminal-title {
+    color: #475569;
+}
+
+body.light .contact-section .terminal-comment {
+    color: #1e293b;
+    border-left-color: #0284c7;
+    background: #f8fafc;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+body.light .contact-section .prompt {
+    color: #0284c7;
+    font-weight: 800;
+}
+
+/* Hard-forced dark and distinct labels on light theme */
+body.light .contact-section .label-text {
+    color: #000000 !important;
+    font-weight: 900 !important;
+    font-size: 1rem !important;
+}
+
+body.light .contact-section input.terminal-input,
+body.light .contact-section textarea.terminal-input {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #94a3b8 !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light .contact-section input.terminal-input:focus,
+body.light .contact-section textarea.terminal-input:focus {
+    background-color: #ffffff !important;
+    border-color: #0284c7 !important;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2) !important;
+}
+
+body.light .contact-section input.terminal-input::placeholder,
+body.light .contact-section textarea.terminal-input::placeholder {
+    color: #64748b !important;
+}
+
+body.light .contact-section .btn-terminal-submit {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+body.light .contact-section .btn-terminal-submit:hover {
+    background: #0284c7;
+    color: #ffffff;
+    border-color: #0284c7;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+body.light .contact-section .btn-terminal-submit .btn-prompt {
+    color: #38bdf8;
+}
+
+body.light .contact-section .btn-terminal-submit:hover .btn-prompt {
+    color: #ffffff;
+}
+
+/* Form Submission Status Message */
+.form-status {
+    margin: 1rem 0 0 0;
+    font-size: 0.9rem;
+    min-height: 1.2em;
+    transition: color 0.2s ease;
+}
+
+.form-status.success {
+    color: #10b981;
+}
+
+.form-status.error {
+    color: #ef4444;
+}
+
+.btn-terminal-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 640px) {
+    .contact-section {
+        padding: 0 0.5rem;
+        margin: 2rem auto;
+    }
+    
+    .contact-section .terminal-content {
+        padding: 1rem;
+    }
+
+    .contact-section .terminal-bar {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .contact-section .terminal-title {
+        font-size: 0.75rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
