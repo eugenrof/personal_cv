@@ -1344,7 +1344,7 @@ body.light .header-info .section-label {
     color: rgb(0, 86, 179);
 }
 
-/* Ensure the subtitle container and spans wrap cleanly within bounds */
+/* Container and text handling to prevent clipping */
 .header-info .subtitle {
     display: flex;
     flex-direction: column;
@@ -1355,11 +1355,12 @@ body.light .header-info .section-label {
 
 .header-info .subtitle span {
     display: block;
-    word-break: normal;
+    max-width: 100%;
     overflow-wrap: break-word;
+    word-break: break-word;
 }
 
-/* Responsive mobile container and font fixes */
+/* Responsive mobile sizing adjustments */
 @media (max-width: 768px) {
     header {
         padding: 1rem;
@@ -1368,14 +1369,15 @@ body.light .header-info .section-label {
 
     .header-info {
         max-width: 100%;
+        min-width: 0; /* Prevents flex items from overflowing parent container */
         overflow: hidden;
     }
 
     .header-info h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .header-info .subtitle span {
-        font-size: 0.82rem;
+        font-size: 0.75rem; /* Scaled down specifically for small screens so "(PSM II)" fits completely */
     }
 }
