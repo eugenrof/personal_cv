@@ -111,6 +111,9 @@
                         aria-label="View PSM II Certification on Credly" title="Scrum.org" class="clean-link">
                         <img src="images/psm2.png" alt="Scrum.org">
                     </a>
+                    <a href="#contact" aria-label="Contact Form" class="clean-link">
+                        <img src="images/email.png" alt="Contact Form">
+                    </a>
                 </div>
             </div>
         </header>
@@ -220,7 +223,7 @@
                                 </a>
                             </div> 
 
-                             <!-- PlayCynk Migration tool between Cypress and Playwright -->
+                            <!-- PlayCynk Migration tool between Cypress and Playwright -->
                             <div class="portfolio-item carousel-slide">
                                 <a href="https://playcynk.vercel.app/" target="_blank"
                                     class="portfolio-link clean-link">
@@ -347,7 +350,7 @@
                                             <h3 class="card-title">Complete GitHub Portfolio</h3>
                                             <p class="card-subtitle">All Repositories</p>
                                         </div>
-                                        <p class="card-description">See more of my open-source QA tools, Agile Management utilities, and advanced test automation frameworks hosted across the GitHub profile, with active documentation and source code</p>
+                                        <p class="card-description">Explore additional open-source QA tools, agile management utilities, and advanced test automation frameworks hosted across the GitHub profile, complete with active documentation and source code</p>
                                     </div>
                                 </a>
                             </div>
@@ -556,6 +559,69 @@
                 </article>
             </section>
 
+             <hr class="section-divider">
+             <h2 class="command-line">$ ./initiate-contact.sh --secure</h2>
+             <a href="#contact" class="tab" data-tab="contact"></a>
+             
+            <section id="contact" class="contact-section">
+
+            <div class="terminal-window">
+                <!-- Terminal Top Bar -->
+                <div class="terminal-bar">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title"><strong>contact-form.sh</strong></div>
+                </div>
+
+                <!-- Terminal Content -->
+                <div class="terminal-content">
+                    <p class="terminal-comment">
+                        <strong>
+                        # Let's discuss your QA strategy or engineering contract.<br>
+                        # Fill out the parameters below to establish a secure connection.
+                        </strong>
+                    </p>
+
+                    <form class="terminal-form" id="contact-form" action="https://formspree.io/f/xzdnnovj" method="POST">
+                        <input type="hidden" name="_subject" value="New message from Portfolio Contact Form">
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <span class="prompt">&gt;</span> <span class="label-text">name:</span>
+                            </label>
+                            <input type="text" id="name" name="name" class="terminal-input" placeholder="Enter your name..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <span class="prompt">&gt;</span> <span class="label-text">email:</span>
+                            </label>
+                            <input type="email" id="email" name="email" class="terminal-input" placeholder="Enter your email..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <span class="prompt">&gt;</span> <span class="label-text">message / scope:</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" class="terminal-input" placeholder="Tell me about your QA automation or Scrum needs..." required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-terminal-submit" id="submit-btn">
+                                <span class="btn-prompt">$</span> <span id="submit-btn-text">Send Message</span>
+                            </button>
+                        </div>
+
+                        <p class="form-status" id="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
             <div class="cursor-line"><span>$</span> <span class="blink">█</span></div>
         </main>
     </div>
@@ -572,7 +638,6 @@
                 &copy; 2026 | Eugen Rof
             </div>
             <div class="footer-links">
-                <a href="https://github.com/eugenrof/profile_cv" target="_blank">GitHub Source</a>
                 <a href="mailto:eugenrof@gmail.com">Contact</a>
             </div>
         </div>
