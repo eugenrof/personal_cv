@@ -1228,6 +1228,114 @@ main, .card, .portfolio-info {
     border: 1px solid var(--border-color);
 }
 
+.contact-section {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-status {
+    color: #38bdf8;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.terminal-output {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.terminal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-label .prompt {
+    color: #38bdf8;
+}
+
+.terminal-input {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    color: #f8fafc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95krem;
+    transition: all 0.2s ease;
+    resize: vertical;
+}
+
+.terminal-input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.15);
+}
+
+.terminal-input::placeholder {
+    color: #475569;
+}
+
+.form-actions {
+    margin-top: 0.5rem;
+}
+
+.btn-terminal {
+    background: #020617;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.btn-terminal:hover {
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+/* Header Terminal Label & Layout Rules */
+.header-info .identity-group {
+    margin-bottom: 0;
+}
+
+.header-info .roles-group {
+    margin-top: 15px;
+}
+
+.header-info .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Theme-adaptive exact colors matching "View PDF" */
 body:not(.light) .header-info .section-label {
     color: rgb(76, 201, 240);
 }
@@ -1236,19 +1344,38 @@ body.light .header-info .section-label {
     color: rgb(0, 86, 179);
 }
 
+/* Ensure the subtitle container and spans wrap cleanly within bounds */
 .header-info .subtitle {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    word-break: break-word;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-@media (max-width: 960px) {
+.header-info .subtitle span {
+    display: block;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+/* Responsive mobile container and font fixes */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .header-info {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .header-info h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .header-info .subtitle span {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 }
