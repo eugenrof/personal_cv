@@ -196,6 +196,51 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
+ * Contact Form Submission via Formspree (AJAX, no page redirect)
+ */
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+const submitBtn = document.getElementById('submit-btn');
+const submitBtnText = document.getElementById('submit-btn-text');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const originalText = submitBtnText.textContent;
+        submitBtn.disabled = true;
+        submitBtnText.textContent = 'Sending...';
+        formStatus.textContent = '';
+        formStatus.className = 'form-status';
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                formStatus.textContent = '> message_sent: 200 OK ✓ Thanks — I\'ll get back to you soon.';
+                formStatus.classList.add('success');
+                contactForm.reset();
+            } else {
+                const data = await response.json().catch(() => null);
+                const errMsg = data && data.errors ? data.errors.map(err => err.message).join(', ') : 'Something went wrong.';
+                formStatus.textContent = `> error: ${errMsg}`;
+                formStatus.classList.add('error');
+            }
+        } catch (err) {
+            formStatus.textContent = '> error: network_failure — please try again or email me directly.';
+            formStatus.classList.add('error');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtnText.textContent = originalText;
+        }
+    });
+}
+
+/**
  * Background Network Canvas Animation
  */
 const canvas = document.getElementById("background-canvas");
