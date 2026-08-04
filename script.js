@@ -48,6 +48,80 @@ navTabs.forEach(tab => {
     });
 });
 
+/**
+ * Smooth Scroll for External Contact Anchor Icon/Button
+ */
+const contactScrollBtn = document.querySelector('a[href="#contact"]:not(.tab)');
+
+if (contactScrollBtn) {
+    contactScrollBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetSection = document.getElementById('contact');
+
+        if (targetSection) {
+            const targetOffset = targetSection.getBoundingClientRect().top + window.scrollY - 140;
+            window.scrollTo({
+                top: targetOffset,
+                behavior: 'smooth'
+            });
+            history.pushState(null, null, '#contact');
+        }
+    });
+}
+
+/**
+ * Dynamic Contact Form Label Updater based on Active Section
+ */
+function updateContactLabels(sectionId) {
+    const nameLabel = document.querySelector('#contact-form label[for="name"] .label-text');
+    const emailLabel = document.querySelector('#contact-form label[for="email"] .label-text');
+    const messageLabel = document.querySelector('#contact-form label[for="message"] .label-text');
+
+    if (!nameLabel || !emailLabel || !messageLabel) return;
+
+    let nameText = 'name:';
+    let emailText = 'email:';
+    let messageText = 'message / scope:';
+
+    switch (sectionId) {
+        case 'about':
+            nameText = 'recruiter_name:';
+            emailText = 'recruiter_email:';
+            messageText = 'inquiry_background:';
+            break;
+        case 'experience':
+            nameText = 'hiring_manager:';
+            emailText = 'company_email:';
+            messageText = 'role_or_contract_details:';
+            break;
+        case 'portfolio':
+        case 'projects':
+            nameText = 'collaborator_name:';
+            emailText = 'contact_email:';
+            messageText = 'project_collaboration_idea:';
+            break;
+        case 'skills':
+            nameText = 'engineer_name:';
+            emailText = 'tech_lead_email:';
+            messageText = 'stack_requirements:';
+            break;
+        case 'education':
+        case 'certifications':
+            nameText = 'reviewer_name:';
+            emailText = 'institution_email:';
+            messageText = 'credential_verification_note:';
+            break;
+        default:
+            nameText = 'name:';
+            emailText = 'email:';
+            messageText = 'message / scope:';
+    }
+
+    nameLabel.textContent = nameText;
+    emailLabel.textContent = emailText;
+    messageLabel.textContent = messageText;
+}
+
 // Scrollspy Logic: Highlights items dynamically depending on active window viewpoint
 function scrollSpy() {
     // If we're at (or extremely close to) the bottom of the page,
@@ -63,6 +137,7 @@ function scrollSpy() {
             lastTab.classList.add('active');
         }
 
+        updateContactLabels('certifications');
         return;
     }
 
@@ -82,6 +157,8 @@ function scrollSpy() {
             tab.classList.add('active');
         }
     });
+
+    updateContactLabels(currentSectionId);
 }
 
 window.addEventListener('scroll', scrollSpy);
