@@ -107,9 +107,9 @@ function updateContactLabels(sectionId) {
             break;
         case 'education':
         case 'certifications':
-            nameText = 'reviewer_name:';
-            emailText = 'institution_email:';
-            messageText = 'credential_verification_note:';
+            nameText = 'name:';
+            emailText = 'email:';
+            messageText = 'message / scope:';
             break;
         default:
             nameText = 'name:';
