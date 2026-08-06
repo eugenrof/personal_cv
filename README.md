@@ -1,6 +1,6 @@
 #QA Engineering Portfolio | Eugen Rof
 
-[![GitHub Pages](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://eugenrof.github.io/profile_cv)
+[![GitHub Pages](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://eugenrof.dev/)
 
 A high-performance, responsive, terminal-themed Curriculum Vitae engineered with a "code-first" aesthetic and zero external dependencies.
 
