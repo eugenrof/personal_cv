@@ -167,19 +167,6 @@ window.addEventListener('scroll', scrollSpy);
  * Back to Top Button Logic
  */
 const bttBtn = document.getElementById("backToTop");
-<<<<<<< HEAD
-window.addEventListener("scroll", () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        if (bttBtn) bttBtn.style.display = "block";
-    } else {
-        if (bttBtn) bttBtn.style.display = "none";
-    }
-});
-
-if (bttBtn) {
-    bttBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-=======
 
 function toggleBackToTop() {
     if (!bttBtn) return;
@@ -193,7 +180,8 @@ function toggleBackToTop() {
 
 window.addEventListener("scroll", toggleBackToTop);
 
-document.addEventListener("DOMContentLoaded", toggleBackToTop);
+// Ensure the correct initial state
+toggleBackToTop();
 
 if (bttBtn) {
     bttBtn.addEventListener("click", () => {
@@ -201,7 +189,6 @@ if (bttBtn) {
             top: 0,
             behavior: "smooth"
         });
->>>>>>> 8b5d2e0 (improved the logic for BackToTop button's behavior)
     });
 }
 
