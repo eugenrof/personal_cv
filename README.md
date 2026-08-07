@@ -1,31 +1,102 @@
-#QA Engineering Portfolio | Eugen Rof
+# QA Engineering Portfolio | Eugen Rof
 
-[![GitHub Pages](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://eugenrof.dev/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white)](https://eugenrof.dev)
 
-A high-performance, responsive, terminal-themed Curriculum Vitae engineered with a "code-first" aesthetic and zero external dependencies.
+An interactive portfolio showcasing my experience in Software Quality Assurance, Test Automation, Performance Testing, and Agile methodologies, built with a terminal-inspired interface and a zero-dependency, performance-first philosophy.
+
+---
 
 ## Overview
 
-This portfolio is designed to mirror a modern developer environment. It features a command-line interface (CLI) aesthetic, interactive tabbed navigation, and a procedurally generated network background—all while maintaining the accessibility and speed required for a professional profile.
+This repository contains the source code for my personal portfolio website.
 
-### Key Highlights:
-* **14+ Years of Expertise:** Showcases a career-spanning focus on risk-weighted automation, exploratory testing, and strategic delivery for brands like **National Geographic Society** and **Sanity.io**.
-* **Terminal Aesthetic:** High-contrast color schemes with scanline overlays, typewriter effects, and **JetBrains Mono** typography.
-* **Quality-First Engineering:** Optimized for a **100/100 Lighthouse score** across Performance, Accessibility, and Best Practices.
-* **Theme Engine:** Seamless toggle between **Dark (Terminal)** and **Light (Modern)** modes with persistent state.
+In addition to providing a downloadable PDF CV, the portfolio highlights my professional experience, technical skills, certifications, and personal engineering projects through a modern terminal-inspired interface built entirely with native web technologies.
 
-## 🛠️ Tech Stack & Quality Tools
+---
 
-* **Architecture:** Semantic **HTML5** and modular **CSS3** utilizing custom variables for real-time theme switching.
-* **Logic:** **Vanilla JavaScript (ES6+)** for tab navigation and UI interactions—delivering a lightweight, dependency-free experience.
-* **Graphics:** **Canvas API** for high-performance, procedural background animations.
-* **QA & Optimization:** Validated for cross-browser compatibility (Chrome, Firefox, Safari) and mobile responsiveness.
+## Features
 
-## 📂 Project Structure
+- Responsive design for desktop, tablet, and mobile devices
+- Terminal-inspired user interface
+- Dark and Light themes with persistent user preference
+- Interactive navigation between portfolio sections
+- Animated Canvas background
+- Downloadable PDF CV
+- Optimized for performance and accessibility
+- Zero external JavaScript or CSS frameworks
+- Print-friendly layout
+
+---
+
+## Technology Stack
+
+- **HTML5** – Semantic document structure
+- **CSS3** – Custom properties, responsive layout, animations, and theming
+- **Vanilla JavaScript (ES6+)** – UI interactions, navigation, and theme management
+- **Canvas API** – Lightweight procedural background animation
+- **JetBrains Mono** – Developer-oriented typography
+- **GitHub Pages** – Static site hosting
+
+---
+
+## Quality Engineering Principles
+
+The project follows the same engineering principles applied in production software development:
+
+- Performance-first implementation
+- Responsive design
+- Cross-browser compatibility
+- Accessibility-focused development
+- Clean semantic markup
+- Maintainable architecture
+- Version-controlled development using Git
+
+---
+
+## SEO & Web Standards
+
+The website implements modern SEO and web best practices, including:
+
+- Custom domain (`eugenrof.dev`)
+- HTTPS
+- Canonical URLs
+- XML Sitemap
+- `robots.txt`
+- Open Graph metadata
+- Twitter Card metadata
+- Schema.org (`Person`) structured data
+- Optimized favicon set
+
+---
+
+## Project Structure
 
 ```text
-├── index.html          # Semantic structure and main entry point
-├── style.css           # Glassmorphism, terminal effects, and print rules
-├── script.js           # Tab logic, theme engine, and canvas animations
-├── images/             # Optimized assets for certifications and social links
-└── README.md           # Documentation and engineering overview
+.
+├── images/
+├── CNAME
+├── index.html
+├── README.md
+├── robots.txt
+├── script.js
+├── sitemap.xml
+└── style.css
+```
+
+---
+
+## Design Philosophy
+
+The interface intentionally adopts a terminal-inspired aesthetic to reflect an engineering mindset while remaining intuitive for recruiters, hiring managers, clients, and fellow engineers.
+
+The project prioritizes clarity, performance, and maintainability, demonstrating that modern, engaging web experiences can be built entirely with native browser technologies.
+
+---
+
+## License
+
+Copyright © 2026 Eugen Rof. All rights reserved.
+
+This repository is made publicly available for viewing and reference purposes only. No part of this repository, including the source code, design, assets, documentation, or other project materials, may be copied, reproduced, modified, distributed, or reused without prior written permission from the copyright holder.
+
+See the [LICENSE](LICENSE) file for the complete licensing terms.
