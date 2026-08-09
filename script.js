@@ -312,6 +312,38 @@ const formStatus = document.getElementById('form-status');
 const submitBtn = document.getElementById('submit-btn');
 const submitBtnText = document.getElementById('submit-btn-text');
 
+/**
+ * Keep the Send Message button disabled until name, email, and
+ * message/scope all have content. Runs on every keystroke/change in
+ * any of the three fields, plus once on load and again after a
+ * successful send (which clears the form via contactForm.reset()).
+ */
+const nameField = document.getElementById('name');
+const emailField = document.getElementById('email');
+const messageField = document.getElementById('message');
+
+function updateSubmitState() {
+    if (!submitBtn || !nameField || !emailField || !messageField) return;
+
+    // checkValidity() leverages the fields' existing HTML validation
+    // (required on name/email, and the email type="email" format
+    // check) — so the button only enables once those actually pass,
+    // not just once each field has *some* text in it.
+    const nameOk = nameField.value.trim().length > 0 && nameField.checkValidity();
+    const emailOk = emailField.value.trim().length > 0 && emailField.checkValidity();
+    const hasMessage = messageField.value.trim().length > 0;
+
+    submitBtn.disabled = !(nameOk && emailOk && hasMessage);
+}
+
+if (nameField && emailField && messageField) {
+    [nameField, emailField, messageField].forEach(field => {
+        field.addEventListener('input', updateSubmitState);
+    });
+    // Set the correct initial state on page load (button starts disabled).
+    updateSubmitState();
+}
+
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -343,8 +375,8 @@ if (contactForm) {
             formStatus.textContent = '> error: network_failure — please try again or email me directly.';
             formStatus.classList.add('error');
         } finally {
-            submitBtn.disabled = false;
             submitBtnText.textContent = originalText;
+            updateSubmitState();
         }
     });
 }
