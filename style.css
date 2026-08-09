@@ -139,6 +139,7 @@ body::after {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-radius: 12px;
     position: relative;
+    z-index: 1;
 }
 
 .sticky-header-container {
