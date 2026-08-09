@@ -161,8 +161,6 @@ function scrollSpy() {
     updateContactLabels(currentSectionId);
 }
 
-window.addEventListener('scroll', scrollSpy);
-
 /**
  * Back to Top Button Logic
  */
@@ -178,7 +176,30 @@ function toggleBackToTop() {
     }
 }
 
-window.addEventListener("scroll", toggleBackToTop);
+/**
+ * Combined, rAF-throttled scroll handler.
+ *
+ * scrollSpy() and toggleBackToTop() were each running on every single
+ * 'scroll' event, and scrollSpy() reads section.offsetTop (a forced
+ * layout read) each time it runs. During a fast scroll that's a lot of
+ * repeated layout work stacked on top of an already GPU-heavy page,
+ * which was starving the requestAnimationFrame loop driving the
+ * background particle animation. Running both at most once per
+ * animation frame (via a simple "ticking" flag) fixes that without
+ * changing what either function does.
+ */
+let scrollTicking = false;
+function onScroll() {
+    if (!scrollTicking) {
+        scrollTicking = true;
+        requestAnimationFrame(() => {
+            scrollSpy();
+            toggleBackToTop();
+            scrollTicking = false;
+        });
+    }
+}
+window.addEventListener('scroll', onScroll, { passive: true });
 
 // Ensure the correct initial state
 toggleBackToTop();
