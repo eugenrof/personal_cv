@@ -1627,6 +1627,7 @@ body.light .contact-section .btn-terminal-submit:hover .btn-prompt {
 
     .tabs {
         max-height: calc(100dvh - 60px);
+        z-index: 1000;
     }
 
     .tab {
