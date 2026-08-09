@@ -406,3 +406,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     scrollSpy();
 });
+
+document.addEventListener('click', (event) => {
+    const menu = document.querySelector('.tabs');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+
+    if (
+        menu &&
+        toggle &&
+        menu.classList.contains('active') &&
+        !menu.contains(event.target) &&
+        !toggle.contains(event.target)
+    ) {
+        menu.classList.remove('active');
+    }
+});
