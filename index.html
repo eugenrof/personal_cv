@@ -1,722 +1,1168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eugen Rof | Interactive CV &amp; Engineering Portfolio</title>
-    <meta name="description" content="Interactive Digital CV of Eugen Rof, a Senior QA Engineer and PSM II Scrum Master with over a decade of experience. Featuring a portfolio of recent AI-powered testing tools and self-healing automation utilities.">
-    <meta name="author" content="Eugen Rof">
-    <meta name="keywords" content="QA Engineer, Test Automation, Scrum Master, PSM II, Cypress, Playwright, AI Testing, Portfolio, CV, Cluj-Napoca">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://eugenrof.dev/">
 
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta
+      name="description"
+      content="Interactive Digital CV of Eugen Rof, a Senior QA Engineer and PSM II Scrum Master with over a decade of experience. Featuring a portfolio of recent AI-powered testing tools and self-healing automation utilities."
+    />
+    <meta name="author" content="Eugen Rof" />
+    <meta
+      name="keywords"
+      content="QA Engineer, Test Automation, Scrum Master, PSM II, Cypress, Playwright, AI Testing, Portfolio, CV, Cluj-Napoca"
+    />
+    <meta name="robots" content="index, follow" />
 
-    <meta name="theme-color" content="#0d1117">
-    <meta name="color-scheme" content="dark light">
+    <link rel="canonical" href="https://eugenrof.dev/" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="color-scheme" content="dark light" />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://eugenrof.dev/">
-    <meta property="og:title" content="Eugen Rof | Interactive CV & Engineering Portfolio">
-    <meta property="og:description" content="Senior QA Automation Engineer & PSM II Scrum Master. Explore an interactive terminal-themed CV featuring AI-powered testing tools and automation frameworks.">
-    <meta property="og:image" content="https://eugenrof.dev/images/social.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Eugen Rof — Interactive CV and QA Engineering Portfolio">
-    <meta property="og:site_name" content="Eugen Rof — Interactive CV">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eugenrof.dev/" />
+    <meta
+      property="og:title"
+      content="Eugen Rof | Interactive CV & Engineering Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Senior QA Automation Engineer & PSM II Scrum Master. Explore an interactive terminal-themed CV featuring AI-powered testing tools and automation frameworks."
+    />
+    <meta
+      property="og:image"
+      content="https://eugenrof.dev/images/social.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Eugen Rof — Interactive CV and QA Engineering Portfolio"
+    />
+    <meta property="og:site_name" content="Eugen Rof — Interactive CV" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Eugen Rof | Interactive CV & QA Engineering Portfolio">
-    <meta name="twitter:description" content="Senior QA Automation Engineer & PSM II Scrum Master. Explore an interactive terminal-themed CV with AI-powered testing tools.">
-    <meta name="twitter:image" content="https://eugenrof.dev/images/social.png">
-    <meta name="twitter:image:alt" content="Eugen Rof — Interactive CV and Engineering Portfolio">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Eugen Rof | Interactive CV & QA Engineering Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Senior QA Automation Engineer & PSM II Scrum Master. Explore an interactive terminal-themed CV with AI-powered testing tools."
+    />
+    <meta
+      name="twitter:image"
+      content="https://eugenrof.dev/images/social.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Eugen Rof — Interactive CV and Engineering Portfolio"
+    />
 
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Eugen Rof CV">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Eugen Rof CV" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://eugenrof.dev/">
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Eugen Rof",
-      "jobTitle": "Senior QA Automation Engineer",
-      "url": "https://eugenrof.dev/",
-      "image": "https://eugenrof.dev/images/profile.png",
-      "sameAs": [
-        "https://www.linkedin.com/in/eugen-rof/",
-        "https://github.com/eugenrof"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cluj-Napoca",
-        "addressCountry": "RO"
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Eugen Rof",
+        "jobTitle": "Senior QA Automation Engineer",
+        "url": "https://eugenrof.dev/",
+        "image": "https://eugenrof.dev/images/profile.png",
+        "sameAs": [
+          "https://www.linkedin.com/in/eugen-rof/",
+          "https://github.com/eugenrof"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cluj-Napoca",
+          "addressCountry": "RO"
+        }
       }
-    }
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <canvas id="background-canvas"></canvas>
 
     <div class="container">
-        <!-- STICKY HEADER WRAPPER FOR DESKTOP STICKY MENU -->
-        <div class="sticky-header-container">
-            <div class="terminal-bar">
-                <div class="terminal-controls">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-                <span class="terminal-bar-title"><strong>QA Engineering Portfolio</strong></span>
-                <div class="terminal-actions">
-                    <a href="images/CV_EugenRof.pdf" class="terminal-pdf-btn" target="_blank" rel="noopener noreferrer">🖨️ View PDF</a>
-                    
-                    <!-- MODERN SUN/MOON THEME TOGGLE SWITCH -->
-                    <label class="theme-switch-wrapper" for="theme-toggle">
-                        <input type="checkbox" id="theme-toggle" aria-label="Toggle Theme" />
-                        <div class="theme-slider">
-                            <span class="slider-knob"></span>
-                            <div class="icons-container">
-                                <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="4"></circle>
-                                    <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </label>
-                </div>
-            </div>
+      <!-- STICKY HEADER WRAPPER FOR DESKTOP STICKY MENU -->
+      <div class="sticky-header-container">
+        <div class="terminal-bar">
+          <div class="terminal-controls">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
 
-            <!-- MOBILE MENU TOGGLE FLOATING ACTION LAYOUT -->
-            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
-                <span>$ ls menu/</span>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+          <span class="terminal-bar-title">
+            <strong>QA Engineering Portfolio</strong>
+          </span>
 
-            <nav class="tabs" id="main-nav">
-                <a href="#about" class="tab active" data-tab="about">about</a>
-                <a href="#experience" class="tab" data-tab="experience">experience</a>
-                <a href="#portfolio" class="tab" data-tab="portfolio">portfolio</a>
-                <a href="#projects" class="tab" data-tab="projects">projects</a>
-                <a href="#skills" class="tab" data-tab="skills">skills</a>
-                <a href="#education" class="tab" data-tab="education">education</a>
-                <a href="#certifications" class="tab" data-tab="certifications">certifications</a>
-            </nav>
+          <div class="terminal-actions">
+            <a
+              href="images/CV_EugenRof.pdf"
+              class="terminal-pdf-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🖨️ View PDF
+            </a>
+
+            <label class="theme-switch-wrapper" for="theme-toggle">
+              <input
+                type="checkbox"
+                id="theme-toggle"
+                aria-label="Toggle Theme"
+              />
+
+              <div class="theme-slider">
+                <span class="slider-knob"></span>
+
+                <div class="icons-container">
+                  <svg
+                    class="icon moon-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    class="icon sun-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path
+                      d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </label>
+          </div>
         </div>
 
-        <header>
-            <div class="profile-container">
-                <a href="/" class="profile-link clean-link">
-                    <img src="images/profile.png" class="profile-photo" alt="Eugen Rof">
-                </a>
-            </div>
-            <div class="header-info">
-                <div class="identity-group">
-                    <span class="section-label">$ who_am_i / name</span>
-                    <h1>Eugen Rof</h1>
-                </div>
-                
-                <div class="roles-group">
-                    <span class="section-label">$ what_i_do / roles</span>
-                    <p class="subtitle">
-                        <span>Senior QA Automation Engineer</span>
-                        <span>Professional Scrum Master (PSM II)</span>
-                    </p>
-                </div>
+        <!-- MOBILE MENU TOGGLE -->
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span>$ ls menu/</span>
 
-                <div class="contact-icons">
-                    <a href="mailto:eugenrof@gmail.com" aria-label="Send an email to Eugen" title="Gmail"
-                        class="clean-link">
-                        <img src="images/gmail.png" alt="Email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/eugen-rof/" target="_blank"
-                        aria-label="Visit Eugen's LinkedIn profile" title="LinkedIn" class="clean-link">
-                        <img src="images/linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://github.com/eugenrof" target="_blank" aria-label="Visit Eugen's GitHub repository"
-                        title="GitHub" class="clean-link">
-                        <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub"
-                            class="header-icon">
-                    </a>
-                    <a href="https://www.credly.com/badges/2afb27dd-ee9b-458d-ae82-39fb808621ad" target="_blank"
-                        aria-label="View PSM II Certification on Credly" title="Scrum.org" class="clean-link">
-                        <img src="images/psm2.png" alt="Scrum.org">
-                    </a>
-                    <a href="#contact" aria-label="Contact Form" class="clean-link">
-                        <img src="images/email.png" alt="Contact Form" title="Contact Form">
-                    </a>
-                </div>
-            </div>
-        </header>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
 
-        <main id="terminal-window">
-            <section id="about" class="tab-content active">
-                <h2 class="command-line">$ cat about.txt</h2>
-                <div class="typing-container">
-                    <p class="typewriter" style="--delay: 0s">
-                        > 14+ years of experience engineering robust systems, balancing strategic automated regression with focused exploratory testing to maintain high quality for complex platforms
-                    </p>
-                    <p class="typewriter" style="--delay: 0.5s">
-                        > Designing and maintaining integrated automation frameworks using Cypress, Playwright, and k6, which bridge UI and performance testing to accelerate CI/CD feedback loops and improve testing ROI
-                    </p>
-                    <p class="typewriter" style="--delay: 1s">
-                        > Facilitating high-velocity delivery as a PSM II Certified Scrum Master by actively removing technical impediments and refining requirements to ensure predictable, high-quality releases
-                    </p>
-                    <p class="typewriter" style="--delay: 1.5s">
-                        > Implementing AI-driven QA workflows using Gemini, Claude, and Amazon Q to multiply productivity via autonomous test generation and resilient selector analysis to minimize test flakiness
-                    </p>
-                </div>
+        <nav class="tabs" id="main-nav">
+          <a href="#about" class="tab active" data-tab="about">about</a>
+          <a href="#experience" class="tab" data-tab="experience">
+            experience
+          </a>
+          <a href="#portfolio" class="tab" data-tab="portfolio"> portfolio </a>
+          <a href="#projects" class="tab" data-tab="projects"> projects </a>
+          <a href="#skills" class="tab" data-tab="skills">skills</a>
+          <a href="#education" class="tab" data-tab="education"> education </a>
+          <a href="#certifications" class="tab" data-tab="certifications">
+            certifications
+          </a>
+        </nav>
+      </div>
 
-                <h2 class="command-line" style="margin-top: 40px;">$ cat interests.txt</h2>
-                <div class="tags">
-                    <span class="tag">Software QA</span>
-                    <span class="tag">Automation Frameworks</span>
-                    <span class="tag">Test Architecture</span>
-                    <span class="tag">API & Performance</span>
-                    <span class="tag">AI Productivity</span>
-                </div>
-            </section>
+      <header>
+        <div class="profile-container">
+          <a href="/" class="profile-link clean-link">
+            <img
+              src="images/profile.png"
+              class="profile-photo"
+              alt="Eugen Rof"
+            />
+          </a>
+        </div>
 
-            <hr class="section-divider">
+        <div class="header-info">
+          <div class="identity-group">
+            <span class="section-label">$ who_am_i / name</span>
+            <h1>Eugen Rof</h1>
+          </div>
 
-            <section id="experience" class="tab-content active">
-                <h2 class="command-line">$ cat experience.log</h2>
-                <div class="card">
-                    <h3>Senior QA Engineer | Scrum Master <span class="date">Mar 2022 – Present</span></h3>
-                    <p class="company">QCatalyst Romania</p>
-                    <ul>
-                        <li>Executed end-to-end testing for National Geographic Society projects, verifying content accuracy in Sanity.io through a combination of automated scripts and manual exploratory testing</li>
-                        <li>Built test frameworks using Cypress and TypeScript, and configured them to run within GitLab CI/CD pipelines</li>
-                        <li>Creating POCs for performance, test management and monitoring tools, such as
-                            <strong>TestRail CLI, JMeter, and Grafana k6</strong></li>
-                        <li>Guided the team through Scrum ceremonies, coordinated tasks between departments, and supported daily development workflows as a Scrum Master</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Senior Test Engineer <span class="date">Nov 2014 – Mar 2022</span></h3>
-                    <p class="company">Endava Romania</p>
-                    <ul>
-                        <li>Built BDD testing suites with <strong>Selenium + Python (Behave)</strong> for digital
-                            media platforms</li>
-                        <li>Performed testing for embedded and OTT platforms, focusing on IPTV, Android TV, and Fire TV ecosystems</li>
-                        <li>Led QA lifecycles using <strong>Xray and HPQC</strong>, coordinating defect management
-                            within Jira for enterprise-scale projects
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>QA Engineer <span class="date">Dec 2013 – Nov 2014</span></h3>
-                    <p class="company">Gama Software</p>
-                    <ul>
-                        <li>Performed cross-platform testing for web and mobile applications built on ColdFusion, .NET, and PHP</li>
-                        <li>Wrote test plans, scenarios, and technical documentation for client demonstrations</li>
-                        <li>Ran end-to-end testing cycles for medical education portals, verifying data integrity and platform reliability for Canadian medical universities</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>QA Test Analyst <span class="date">Jan 2012 – Dec 2013</span></h3>
-                    <p class="company">Quantic Lab</p>
-                    <ul>
-                        <li>Executed functional, compliance, and compatibility testing for diverse titles across web,
-                            mobile, and console platforms</li>
-                        <li>Stepped into the Test Lead role for a specialized PC project, managing a team of junior analysts to ensure stability across varying hardware configurations and OS environments</li>
-                    </ul>
-                </div>
-            </section>
+          <div class="roles-group">
+            <span class="section-label">$ what_i_do / roles</span>
 
-            <hr class="section-divider">
+            <p class="subtitle">
+              <span>Senior QA Automation Engineer</span>
+              <span>Professional Scrum Master (PSM II)</span>
+            </p>
+          </div>
 
-            <section id="portfolio" class="tab-content active">
-                <h2 class="command-line">$ ./run_my_tools.sh --carousel</h2>
-                
-                <div class="portfolio-carousel">
-                    <button class="carousel-btn prev-btn" aria-label="Previous Project">&#10094;</button>
-                    
-                    <div class="carousel-viewport">
-                        <div class="portfolio-grid carousel-track">
+          <div class="contact-icons">
+            <a
+              href="mailto:eugenrof@gmail.com"
+              aria-label="Send an email to Eugen"
+              title="Gmail"
+              class="clean-link"
+            >
+              <img src="images/gmail.png" alt="Email" />
+            </a>
 
-                            <!-- TC Chef Tool with High-Res Raw Github Link -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://eugenrof.github.io/tc-chef-tool/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/tc-chef-tool/refs/heads/main/images/tc_chef.png"
-                                            alt="TC Chef Tool">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">TC Chef</h3>
-                                            <p class="card-subtitle">AI Test Case Generator</p>
-                                        </div>
-                                        <p class="card-description">Converts User Stories into CSV test cases and Gherkin scenarios. Cuts manual test-case authoring from hours to minutes</p>
-                                    </div>
-                                </a>
-                            </div>
+            <a
+              href="https://www.linkedin.com/in/eugen-rof/"
+              target="_blank"
+              aria-label="Visit Eugen's LinkedIn profile"
+              title="LinkedIn"
+              class="clean-link"
+            >
+              <img src="images/linkedin.svg" alt="LinkedIn" />
+            </a>
 
-                            <!-- Captain QA Bot -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://eugenrof.github.io/captain-qa-bot/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/captain-qa-bot/refs/heads/main/images/social-share.png"
-                                            alt="Captain QA Bot">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Captain QA Bot</h3>
-                                            <p class="card-subtitle">QA Learning Assistant</p>
-                                        </div>
-                                        <p class="card-description">An experimental Google Gemini based learning assistant for Software Testing, covering Manual QA, Test Automation frameworks, ISTQB concepts and more</p>
-                                    </div>
-                                </a>
-                            </div>
+            <a
+              href="https://github.com/eugenrof"
+              target="_blank"
+              aria-label="Visit Eugen's GitHub repository"
+              title="GitHub"
+              class="clean-link"
+            >
+              <img
+                src="https://github.githubassets.com/favicons/favicon.svg"
+                alt="GitHub"
+                class="header-icon"
+              />
+            </a>
 
-                            <!-- PlayCynk Migration tool between Cypress and Playwright -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://playcynk.vercel.app/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/playcynk-app/refs/heads/main/images/social-share.jpeg"
-                                            alt="PlayCynk Test Parity Engine">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">PlayCynk</h3>
-                                            <p class="card-subtitle">Cypress ↔ Playwright Converter</p>
-                                        </div>
-                                        <p class="card-description">Transforms test suites between Cypress and Playwright using structural analysis. Removes the manual rewrite step when a team switches frameworks</p>
-                                    </div>
-                                </a>
-                            </div>
+            <a
+              href="https://www.credly.com/badges/2afb27dd-ee9b-458d-ae82-39fb808621ad"
+              target="_blank"
+              aria-label="View PSM II Certification on Credly"
+              title="Scrum.org"
+              class="clean-link"
+            >
+              <img src="images/psm2.png" alt="Scrum.org" />
+            </a>
 
-                            <!-- AI-Powered WCAG Accessibility Auditor Github Link -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://eugenrof.github.io/wcag-auditor/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/wcag-auditor/refs/heads/main/images/social-share.png"
-                                            alt="AI WCAG Accessibility Auditor">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">AI WCAG Accessibility Auditor</h3>
-                                            <p class="card-subtitle">Accessibility Compliance Auditor</p>
-                                        </div>
-                                        <p class="card-description">Uses Gemini AI to evaluate HTML and UI patterns against WCAG 2.2, delivering compliance scores and fixes to catch accessibility issues before client delivery or audits</p>
-                                    </div>
-                                </a>
-                            </div>
+            <a href="#contact" aria-label="Contact Form" class="clean-link">
+              <img
+                src="images/email.png"
+                alt="Contact Form"
+                title="Contact Form"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
 
-                            <!-- Sitemap Link Validator Tool -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://sitemap-link-validator.vercel.app/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/sitemap-validator/refs/heads/main/images/share-preview.png"
-                                            alt="Sitemap Link Validator">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Sitemap Link Validator</h3>
-                                            <p class="card-subtitle">Endpoint Status Checker</p>
-                                        </div>
-                                        <p class="card-description">Crawls a sitemap.xml and checks every endpoint's HTTP status, with live crawl feedback and PDF reporting. Catches broken links before users or search engines do</p>
-                                    </div>
-                                </a>
-                            </div>
+      <main id="terminal-window">
+        <section id="about" class="tab-content active">
+          <h2 class="command-line">$ cat about.txt</h2>
 
-                            <!-- Sprint Capacity Planner with High-Res Raw Github Link -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://sprint-cap.netlify.app/" target="_blank" class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/sprint-capacity-planner/refs/heads/main/images/share-preview.png"
-                                            alt="Sprint Capacity Planner">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Sprint Capacity Planner</h3>
-                                            <p class="card-subtitle">Scrum Capacity Modeling Tool</p>
-                                        </div>
-                                        <p class="card-description">Calculates real-world team availability and velocity from sprint inputs, with instant PDF reporting and deep-link sharing. Replaces manual capacity spreadsheets with a live, shareable model</p>
-                                    </div>
-                                </a>
-                            </div>
+          <div class="typing-container">
+            <p class="typewriter" style="--delay: 0s">
+              &gt; 14+ years of experience engineering robust systems, balancing
+              strategic automated regression with focused exploratory testing to
+              maintain high quality for complex platforms
+            </p>
 
-                            <!-- AI Selector Healer Tool -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://eugenrof.github.io/ai-selector-healer/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/ai-selector-healer/main/images/ai_healer.png"
-                                            alt="AI Selector Healer">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">AI Selector Healer</h3>
-                                            <p class="card-subtitle">Automation Repair Utility</p>
-                                        </div>
-                                        <p class="card-description">Analyzes DOM snapshots to suggest alternative Cypress/Playwright selectors. Keeps automation suites running through UI changes instead of breaking on every DOM tweak</p>
-                                    </div>
-                                </a>
-                            </div>
+            <p class="typewriter" style="--delay: 0.5s">
+              &gt; Designing and maintaining integrated automation frameworks
+              using Cypress, Playwright, and k6, which bridge UI and performance
+              testing to accelerate CI/CD feedback loops and improve testing ROI
+            </p>
 
-                            <!-- Interactive CV / Personal Profile -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://eugenrof.github.io/profile_cv/" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="https://raw.githubusercontent.com/eugenrof/profile_cv/refs/heads/main/images/social.png"
-                                            alt="Interactive CV Profile">
-                                        <div class="portfolio-overlay"><span>Open App ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Interactive CV</h3>
-                                            <p class="card-subtitle">Terminal-Themed CV/Portfolio</p>
-                                        </div>
-                                        <p class="card-description">A personal website designed to look like a computer terminal. Built using vanilla JavaScript and CSS to display project code, technical skills, and career history through a responsive interface</p>
-                                    </div>
-                                </a>
-                            </div>
+            <p class="typewriter" style="--delay: 1s">
+              &gt; Facilitating high-velocity delivery as a PSM II Certified
+              Scrum Master by actively removing technical impediments and
+              refining requirements to ensure predictable, high-quality releases
+            </p>
 
-                            <!-- GitHub Portfolio / Personal Profile -->
-                            <div class="portfolio-item carousel-slide">
-                                <a href="https://github.com/eugenrof?tab=repositories" target="_blank"
-                                    class="portfolio-link clean-link">
-                                    <div class="image-wrapper">
-                                        <img src="images/portfolio_preview.png"
-                                            alt="GitHub Portfolio">
-                                        <div class="portfolio-overlay"><span>View All ↗</span></div>
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Complete GitHub Portfolio</h3>
-                                            <p class="card-subtitle">All Repositories</p>
-                                        </div>
-                                        <p class="card-description">Browse open-source QA tools, agile utilities, and automation frameworks on GitHub, backed by complete source code and documentation</p>
-                                    </div>
-                                </a>
-                            </div>
+            <p class="typewriter" style="--delay: 1.5s">
+              &gt; Implementing AI-driven QA workflows using Gemini, Claude, and
+              Amazon Q to multiply productivity via autonomous test generation
+              and resilient selector analysis to minimize test flakiness
+            </p>
+          </div>
 
-                        </div>
-                    </div>
+          <h2 class="command-line" style="margin-top: 40px">
+            $ cat interests.txt
+          </h2>
 
-                    <button class="carousel-btn next-btn" aria-label="Next Project">&#10095;</button>
-                </div>
-
-                <!-- Carousel Pagination Dots -->
-                <div class="carousel-dots" id="carouselDots" aria-label="Carousel Pagination"></div>
-            </section>
-
-            <hr class="section-divider">
-
-            <section id="projects" class="tab-content active">
-                <h2 class="command-line">$ ls -R industry_portfolios/</h2>
-
-                <div class="skills-grid">
-
-                    <div class="card">
-                        <h3>FinTech & Insurance</h3>
-
-                        <div class="industry-icon">🏦</div>
-
-                        <p class="domain-desc">
-                            Secure payment gateways &amp; transaction workflows
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Non-Profit &amp; Science</h3>
-
-                        <div class="industry-icon">🌍</div>
-
-                        <p class="domain-desc">
-                            Digital publishing &amp; content delivery platforms
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Education &amp; Healthcare</h3>
-
-                        <div class="industry-icon">🎓</div>
-
-                        <p class="domain-desc">
-                            Medical education portals &amp; learning platforms
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>IPTV &amp; Telecom</h3>
-
-                        <div class="industry-icon">📺</div>
-
-                        <p class="domain-desc">
-                            Real-device automation for IPTV &amp; Smart TV ecosystems
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Gaming</h3>
-
-                        <div class="industry-icon">🎮</div>
-
-                        <p class="domain-desc">
-                            Cross-platform console, PC &amp; mobile testing
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Media &amp; Entertainment</h3>
-
-                        <div class="industry-icon">🎬</div>
-
-                        <p class="domain-desc">
-                            OTT streaming platforms &amp; UI performance validation
-                        </p>
-                    </div>
-
-                </div>
-            </section>
-
-            <hr class="section-divider">
-
-            <section id="skills" class="tab-content active">
-                <h2 class="command-line">$ ls -R technical_core/</h2>
-                <div class="skills-grid">
-                    <div class="card">
-                        <h3>Automation & Engineering</h3>
-                        <div class="tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Cypress</span>
-                            <span class="tag">Playwright</span>
-                            <span class="tag">Appium</span>
-                            <span class="tag">PyTest</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Git</span>
-                            <span class="tag">GitLab</span>
-                            <span class="tag">GitHub Actions</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Quality & Delivery</h3>
-                        <div class="tags">
-                            <span class="tag">Jira</span>
-                            <span class="tag">TestRail</span>
-                            <span class="tag">Qase</span>
-                            <span class="tag">Xray</span>
-                            <span class="tag">Confluence</span>
-                            <span class="tag">Miro</span>
-                            <span class="tag">Figma</span>
-                            <span class="tag">Grafana k6</span>
-                            <span class="tag">JMeter</span>
-                            <span class="tag">Postman</span>
-                            <span class="tag">REST</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>AI & Productivity</h3>
-                        <div class="tags">
-                            <span class="tag">Gemini</span>
-                            <span class="tag">ChatGPT</span>
-                            <span class="tag">Claude</span>
-                            <span class="tag">GitHub Copilot</span>
-                            <span class="tag">Amazon Q</span>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="command-line" style="margin-top: 30px;">$ ls -R agile_soft_skills/</h2>
-                <div class="skills-grid">
-                    <div class="card">
-                        <h3>Work Methodologies</h3>
-                        <div class="tags">
-                            <span class="tag">Scrum</span><span class="tag">Kanban</span><span
-                                class="tag">SAFe</span><span class="tag">Waterfall</span><span class="tag">Agile
-                                Coaching</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Interpersonal</h3>
-                        <div class="tags">
-                            <span class="tag">Collaboration</span><span class="tag">Active Listening</span><span
-                                class="tag">Adaptability</span><span class="tag">Time Management</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Languages</h3>
-                        <ul class="lang-list">
-                            <li>RO: ● ● ● ● ● (Native)</li>
-                            <li>EN: ● ● ● ● ● (Professional)</li>
-                            <li>FR: ● ● ○ ○ ○ (Basic)</li>
-                            <li>DE: ● ○ ○ ○ ○ (Beginner)</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <hr class="section-divider">
-
-            <section id="education" class="tab-content active">
-                <h2 class="command-line">$ cat education.txt</h2>
-
-                <div class="education-list">
-                    <article class="card">
-                        <span class="date">2012–2014</span>
-                        <h3>MSc – Applied Informatics</h3>
-                        <p class="company">🏛️ Technical University of Cluj-Napoca</p>
-                        <p class="domain-desc-edu">🧑‍🎓 Faculty of Computer Science and Automation</p>
-                    </article>
-
-                    <article class="card">
-                        <span class="date">2009–2012</span>
-                        <h3>BSc – Communication Sciences</h3>
-                        <p class="company">🏛️ Babeș-Bolyai University of Cluj-Napoca</p>
-                        <p class="domain-desc-edu">🧑‍🎓 Faculty of History and Philosophy</p>
-                    </article>
-                </div>
-            </section>
-
-            <hr class="section-divider">
-
-            <section id="certifications" class="tab-content active">
-                <h2 class="command-line">$ ls certifications/</h2>
-                <article class="card">
-                    <h3>Scrum.org</h3>
-                    <ul>
-                        <li><a href="https://www.credly.com/badges/2afb27dd-ee9b-458d-ae82-39fb808621ad" target="_blank"
-                                rel="noopener noreferrer">Professional Scrum Master II (PSM II)</a></li>
-                        <li><a href="https://www.credly.com/badges/7af87a6f-3e5f-476c-99d3-396775f50736" target="_blank"
-                                rel="noopener noreferrer">Professional Scrum Master I (PSM I)</a></li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <h3>International Software Test Institute</h3>
-                    <ul>
-                        <li><a href="https://www.test-institute.org/badges/33089003345929" target="_blank"
-                                rel="noopener noreferrer">Software Tester Certification (ASTC)</a></li>
-                        <li><a href="https://www.test-institute.org/badges/69295000915415" target="_blank"
-                                rel="noopener noreferrer">Software Test Manager Certification (ASTMC)</a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <hr class="section-divider">
-            
-            <a href="#contact" data-tab="contact"></a>
-            <h2 class="command-line">$ ./initiate-contact.sh --secure</h2>
-            
-            <section id="contact" class="contact-section">
-
-            <div class="terminal-window">
-                <!-- Terminal Top Bar -->
-                <div class="terminal-bar">
-                    <div class="terminal-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="terminal-title"><strong>contact-form.sh</strong></div>
-                </div>
-
-                <!-- Terminal Content -->
-                <div class="terminal-content">
-                    <p class="terminal-comment">
-                        <strong>
-                        # Want to start a conversation? Leave a message below to connect.<br>
-                        # Fill out the parameters to establish a connection and get in touch.
-                        </strong>
-                    </p>
-
-                    <form class="terminal-form" id="contact-form" action="https://formspree.io/f/xzdnnovj" method="POST">
-                        <input type="hidden" name="_subject" value="New message from Portfolio Contact Form">
-                        <input type="text" name="_gotcha" style="display:none">
-
-                        <div class="form-group">
-                            <label for="name" class="form-label">
-                                <span class="prompt">&gt;</span> <span class="label-text">name:</span>
-                            </label>
-                            <input type="text" id="name" name="name" class="terminal-input" placeholder="Enter your name..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" class="form-label">
-                                <span class="prompt">&gt;</span> <span class="label-text">email:</span>
-                            </label>
-                            <input type="email" id="email" name="email" class="terminal-input" placeholder="Enter your email..." required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message" class="form-label">
-                                <span class="prompt">&gt;</span> <span class="label-text">message / scope:</span>
-                            </label>
-                            <textarea id="message" name="message" class="terminal-input" rows="4" maxlength="1000" placeholder="Tell me about your QA automation or Scrum needs..."></textarea>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit" class="btn-terminal-submit" id="submit-btn">
-                                <span class="btn-prompt">$</span> <span id="submit-btn-text">Send Message</span>
-                            </button>
-                        </div>
-
-                        <p class="form-status" id="form-status"></p>
-                    </form>
-                </div>
-            </div>
+          <div class="tags">
+            <span class="tag">Software QA</span>
+            <span class="tag">Automation Frameworks</span>
+            <span class="tag">Test Architecture</span>
+            <span class="tag">API & Performance</span>
+            <span class="tag">AI Productivity</span>
+          </div>
         </section>
 
-            <div class="cursor-line"><span>$</span> <span class="blink">█</span></div>
-        </main>
+        <hr class="section-divider" />
+
+        <section id="experience" class="tab-content active">
+          <h2 class="command-line">$ cat experience.log</h2>
+
+          <div class="card">
+            <h3>
+              Senior QA Engineer | Scrum Master
+              <span class="date">Mar 2022 – Present</span>
+            </h3>
+
+            <p class="company">QCatalyst Romania</p>
+
+            <ul>
+              <li>
+                Executed end-to-end testing for National Geographic Society
+                projects, verifying content accuracy in Sanity.io through a
+                combination of automated scripts and manual exploratory testing
+              </li>
+
+              <li>
+                Built test frameworks using Cypress and TypeScript, and
+                configured them to run within GitLab CI/CD pipelines
+              </li>
+
+              <li>
+                Creating POCs for performance, test management and monitoring
+                tools, such as
+                <strong>TestRail CLI, JMeter, and Grafana k6</strong>
+              </li>
+
+              <li>
+                Guided the team through Scrum ceremonies, coordinated tasks
+                between departments, and supported daily development workflows
+                as a Scrum Master
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>
+              Senior Test Engineer
+              <span class="date">Nov 2014 – Mar 2022</span>
+            </h3>
+
+            <p class="company">Endava Romania</p>
+
+            <ul>
+              <li>
+                Built BDD testing suites with
+                <strong>Selenium + Python (Behave)</strong> for digital media
+                platforms
+              </li>
+
+              <li>
+                Performed testing for embedded and OTT platforms, focusing on
+                IPTV, Android TV, and Fire TV ecosystems
+              </li>
+
+              <li>
+                Led QA lifecycles using <strong>Xray and HPQC</strong>,
+                coordinating defect management within Jira for enterprise-scale
+                projects
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>
+              QA Engineer
+              <span class="date">Dec 2013 – Nov 2014</span>
+            </h3>
+
+            <p class="company">Gama Software</p>
+
+            <ul>
+              <li>
+                Performed cross-platform testing for web and mobile applications
+                built on ColdFusion, .NET, and PHP
+              </li>
+
+              <li>
+                Wrote test plans, scenarios, and technical documentation for
+                client demonstrations
+              </li>
+
+              <li>
+                Ran end-to-end testing cycles for medical education portals,
+                verifying data integrity and platform reliability for Canadian
+                medical universities
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>
+              QA Test Analyst
+              <span class="date">Jan 2012 – Dec 2013</span>
+            </h3>
+
+            <p class="company">Quantic Lab</p>
+
+            <ul>
+              <li>
+                Executed functional, compliance, and compatibility testing for
+                diverse titles across web, mobile, and console platforms
+              </li>
+
+              <li>
+                Stepped into the Test Lead role for a specialized PC project,
+                managing a team of junior analysts to ensure stability across
+                varying hardware configurations and OS environments
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="portfolio" class="tab-content active">
+          <h2 class="command-line">$ ./run_my_tools.sh --carousel</h2>
+
+          <div class="portfolio-carousel">
+            <button class="carousel-btn prev-btn" aria-label="Previous Project">
+              &#10094;
+            </button>
+
+            <div class="carousel-viewport">
+              <div class="portfolio-grid carousel-track">
+                <!-- 01 TC Chef -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://eugenrof.github.io/tc-chef-tool/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/tc-chef-tool/refs/heads/main/images/tc_chef.png"
+                        alt="TC Chef Tool"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">TC Chef</h3>
+                        <p class="card-subtitle">AI Test Case Generator</p>
+                      </div>
+
+                      <p class="card-description">
+                        Converts User Stories into CSV test cases and Gherkin
+                        scenarios. Cuts manual test-case authoring from hours to
+                        minutes
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 02 Captain QA Bot -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://eugenrof.github.io/captain-qa-bot/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/captain-qa-bot/refs/heads/main/images/social-share.png"
+                        alt="Captain QA Bot"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">Captain QA Bot</h3>
+                        <p class="card-subtitle">QA Learning Assistant</p>
+                      </div>
+
+                      <p class="card-description">
+                        An experimental Google Gemini based learning assistant
+                        for Software Testing, covering Manual QA, Test
+                        Automation frameworks, ISTQB concepts and more
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 03 PlayCynk -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://playcynk.vercel.app/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/playcynk-app/refs/heads/main/images/social-share.jpeg"
+                        alt="PlayCynk Test Parity Engine"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">PlayCynk</h3>
+                        <p class="card-subtitle">
+                          Cypress ↔ Playwright Converter
+                        </p>
+                      </div>
+
+                      <p class="card-description">
+                        Transforms test suites between Cypress and Playwright
+                        using structural analysis. Removes the manual rewrite
+                        step when a team switches frameworks
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 04 AI WCAG Accessibility Auditor -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://eugenrof.github.io/wcag-auditor/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/wcag-auditor/refs/heads/main/images/social-share.png"
+                        alt="AI WCAG Accessibility Auditor"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">
+                          AI WCAG Accessibility Auditor
+                        </h3>
+
+                        <p class="card-subtitle">
+                          Accessibility Compliance Auditor
+                        </p>
+                      </div>
+
+                      <p class="card-description">
+                        Uses Gemini AI to evaluate HTML and UI patterns against
+                        WCAG 2.2, delivering compliance scores and fixes to
+                        catch accessibility issues before client delivery or
+                        audits
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 05 Sitemap Link Validator -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://sitemap-link-validator.vercel.app/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/sitemap-validator/refs/heads/main/images/share-preview.png"
+                        alt="Sitemap Link Validator"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">Sitemap Link Validator</h3>
+
+                        <p class="card-subtitle">Endpoint Status Checker</p>
+                      </div>
+
+                      <p class="card-description">
+                        Crawls a sitemap.xml and checks every endpoint's HTTP
+                        status, with live crawl feedback and PDF reporting.
+                        Catches broken links before users or search engines do
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 06 Sprint Capacity Planner -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://sprint-cap.netlify.app/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/sprint-capacity-planner/refs/heads/main/images/share-preview.png"
+                        alt="Sprint Capacity Planner"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">Sprint Capacity Planner</h3>
+
+                        <p class="card-subtitle">
+                          Scrum Capacity Modeling Tool
+                        </p>
+                      </div>
+
+                      <p class="card-description">
+                        Calculates real-world team availability and velocity
+                        from sprint inputs, with instant PDF reporting and
+                        deep-link sharing. Replaces manual capacity spreadsheets
+                        with a live, shareable model
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 07 AI Selector Healer -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://eugenrof.github.io/ai-selector-healer/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/ai-selector-healer/main/images/ai_healer.png"
+                        alt="AI Selector Healer"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">AI Selector Healer</h3>
+
+                        <p class="card-subtitle">Automation Repair Utility</p>
+                      </div>
+
+                      <p class="card-description">
+                        Analyzes DOM snapshots to suggest alternative
+                        Cypress/Playwright selectors. Keeps automation suites
+                        running through UI changes instead of breaking on every
+                        DOM tweak
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 08 Interactive CV -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://eugenrof.github.io/profile_cv/"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="https://raw.githubusercontent.com/eugenrof/profile_cv/refs/heads/main/images/social.png"
+                        alt="Interactive CV Profile"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>Open App ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">Interactive CV</h3>
+
+                        <p class="card-subtitle">
+                          Terminal-Themed CV/Portfolio
+                        </p>
+                      </div>
+
+                      <p class="card-description">
+                        A personal website designed to look like a computer
+                        terminal. Built using vanilla JavaScript and CSS to
+                        display project code, technical skills, and career
+                        history through a responsive interface
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 09 Complete GitHub Portfolio -->
+                <div class="portfolio-item carousel-slide">
+                  <a
+                    href="https://github.com/eugenrof?tab=repositories"
+                    target="_blank"
+                    class="portfolio-link clean-link"
+                  >
+                    <div class="image-wrapper">
+                      <img
+                        src="images/portfolio_preview.png"
+                        alt="GitHub Portfolio"
+                      />
+
+                      <div class="portfolio-overlay">
+                        <span>View All ↗</span>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-info">
+                      <div class="card-header">
+                        <h3 class="card-title">Complete GitHub Portfolio</h3>
+
+                        <p class="card-subtitle">All Repositories</p>
+                      </div>
+
+                      <p class="card-description">
+                        Browse open-source QA tools, agile utilities, and
+                        automation frameworks on GitHub, backed by complete
+                        source code and documentation
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-btn next-btn" aria-label="Next Project">
+              &#10095;
+            </button>
+          </div>
+
+          <div class="carousel-counter" id="carouselCounter" aria-live="polite">
+            [01 / 09]
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="projects" class="tab-content active">
+          <h2 class="command-line">$ ls -R industry_portfolios/</h2>
+
+          <div class="skills-grid">
+            <div class="card">
+              <h3>FinTech & Insurance</h3>
+              <div class="industry-icon">🏦</div>
+              <p class="domain-desc">
+                Secure payment gateways &amp; transaction workflows
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Non-Profit &amp; Science</h3>
+              <div class="industry-icon">🌍</div>
+              <p class="domain-desc">
+                Digital publishing &amp; content delivery platforms
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Education &amp; Healthcare</h3>
+              <div class="industry-icon">🎓</div>
+              <p class="domain-desc">
+                Medical education portals &amp; learning platforms
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>IPTV &amp; Telecom</h3>
+              <div class="industry-icon">📺</div>
+              <p class="domain-desc">
+                Real-device automation for IPTV &amp; Smart TV ecosystems
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Gaming</h3>
+              <div class="industry-icon">🎮</div>
+              <p class="domain-desc">
+                Cross-platform console, PC &amp; mobile testing
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Media &amp; Entertainment</h3>
+              <div class="industry-icon">🎬</div>
+              <p class="domain-desc">
+                OTT streaming platforms &amp; UI performance validation
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="skills" class="tab-content active">
+          <h2 class="command-line">$ ls -R technical_core/</h2>
+
+          <div class="skills-grid">
+            <div class="card">
+              <h3>Automation & Engineering</h3>
+
+              <div class="tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">Cypress</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">Appium</span>
+                <span class="tag">PyTest</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitLab</span>
+                <span class="tag">GitHub Actions</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Quality & Delivery</h3>
+
+              <div class="tags">
+                <span class="tag">Jira</span>
+                <span class="tag">TestRail</span>
+                <span class="tag">Qase</span>
+                <span class="tag">Xray</span>
+                <span class="tag">Confluence</span>
+                <span class="tag">Miro</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Grafana k6</span>
+                <span class="tag">JMeter</span>
+                <span class="tag">Postman</span>
+                <span class="tag">REST</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>AI & Productivity</h3>
+
+              <div class="tags">
+                <span class="tag">Gemini</span>
+                <span class="tag">ChatGPT</span>
+                <span class="tag">Claude</span>
+                <span class="tag">GitHub Copilot</span>
+                <span class="tag">Amazon Q</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="command-line" style="margin-top: 30px">
+            $ ls -R agile_soft_skills/
+          </h2>
+
+          <div class="skills-grid">
+            <div class="card">
+              <h3>Work Methodologies</h3>
+
+              <div class="tags">
+                <span class="tag">Scrum</span>
+                <span class="tag">Kanban</span>
+                <span class="tag">SAFe</span>
+                <span class="tag">Waterfall</span>
+                <span class="tag">Agile Coaching</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Interpersonal</h3>
+
+              <div class="tags">
+                <span class="tag">Collaboration</span>
+                <span class="tag">Active Listening</span>
+                <span class="tag">Adaptability</span>
+                <span class="tag">Time Management</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Languages</h3>
+
+              <ul class="lang-list">
+                <li>RO: ● ● ● ● ● (Native)</li>
+                <li>EN: ● ● ● ● ● (Professional)</li>
+                <li>FR: ● ● ○ ○ ○ (Basic)</li>
+                <li>DE: ● ○ ○ ○ ○ (Beginner)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="education" class="tab-content active">
+          <h2 class="command-line">$ cat education.txt</h2>
+
+          <div class="education-list">
+            <article class="card">
+              <span class="date">2012–2014</span>
+
+              <h3>MSc – Applied Informatics</h3>
+
+              <p class="company">🏛️ Technical University of Cluj-Napoca</p>
+
+              <p class="domain-desc-edu">
+                🧑‍🎓 Faculty of Computer Science and Automation
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="date">2009–2012</span>
+
+              <h3>BSc – Communication Sciences</h3>
+
+              <p class="company">🏛️ Babeș-Bolyai University of Cluj-Napoca</p>
+
+              <p class="domain-desc-edu">
+                🧑‍🎓 Faculty of History and Philosophy
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="certifications" class="tab-content active">
+          <h2 class="command-line">$ ls certifications/</h2>
+
+          <article class="card">
+            <h3>Scrum.org</h3>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.credly.com/badges/2afb27dd-ee9b-458d-ae82-39fb808621ad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Professional Scrum Master II (PSM II)
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.credly.com/badges/7af87a6f-3e5f-476c-99d3-396775f50736"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Professional Scrum Master I (PSM I)
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>International Software Test Institute</h3>
+
+            <ul>
+              <li>
+                <a
+                  href="https://www.test-institute.org/badges/33089003345929"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Software Tester Certification (ASTC)
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.test-institute.org/badges/69295000915415"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Software Test Manager Certification (ASTMC)
+                </a>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <hr class="section-divider" />
+
+        <a href="#contact" data-tab="contact"></a>
+
+        <h2 class="command-line">$ ./initiate-contact.sh --secure</h2>
+
+        <section id="contact" class="contact-section">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+
+              <div class="terminal-title">
+                <strong>contact-form.sh</strong>
+              </div>
+            </div>
+
+            <div class="terminal-content">
+              <p class="terminal-comment">
+                <strong>
+                  # Want to start a conversation? Leave a message below to
+                  connect.<br />
+                  # Fill out the parameters to establish a connection and get in
+                  touch.
+                </strong>
+              </p>
+
+              <form
+                class="terminal-form"
+                id="contact-form"
+                action="https://formspree.io/f/xzdnnovj"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New message from Portfolio Contact Form"
+                />
+
+                <input type="text" name="_gotcha" style="display: none" />
+
+                <div class="form-group">
+                  <label for="name" class="form-label">
+                    <span class="prompt">&gt;</span>
+                    <span class="label-text">name:</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="terminal-input"
+                    placeholder="Enter your name..."
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    <span class="prompt">&gt;</span>
+                    <span class="label-text">email:</span>
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="terminal-input"
+                    placeholder="Enter your email..."
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">
+                    <span class="prompt">&gt;</span>
+                    <span class="label-text">message / scope:</span>
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="terminal-input"
+                    rows="4"
+                    maxlength="1000"
+                    placeholder="Tell me about your QA automation or Scrum needs..."
+                  ></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button
+                    type="submit"
+                    class="btn-terminal-submit"
+                    id="submit-btn"
+                  >
+                    <span class="btn-prompt">$</span>
+                    <span id="submit-btn-text">Send Message</span>
+                  </button>
+                </div>
+
+                <p class="form-status" id="form-status"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <div class="cursor-line">
+          <span>$</span>
+          <span class="blink">█</span>
+        </div>
+      </main>
     </div>
 
     <button id="backToTop" title="Go to top">↑</button>
 
     <footer class="terminal-footer">
-        <div class="footer-content">
-            <div class="status-group">
-                <span class="status-item"><span class="status-dot"></span> SYSTEM: ONLINE</span>
-                <span class="status-item">🌐 CLUJ-NAPOCA, RO</span>
-            </div>
-            <div class="copyright">
-                &copy; 2026 | Eugen Rof
-            </div>
-            <div class="footer-links">
-                <a href="mailto:eugenrof@gmail.com">Contact</a>
-            </div>
+      <div class="footer-content">
+        <div class="status-group">
+          <span class="status-item">
+            <span class="status-dot"></span>
+            SYSTEM: ONLINE
+          </span>
+
+          <span class="status-item"> 🌐 CLUJ-NAPOCA, RO </span>
         </div>
+
+        <div class="copyright">&copy; 2026 | Eugen Rof</div>
+
+        <div class="footer-links">
+          <a href="mailto:eugenrof@gmail.com">Contact</a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
