@@ -1178,10 +1178,10 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     color: var(--accent-color);
-    width: 36px;
-    height: 36px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    font-size: 0.9rem;
+    font-size: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1244,9 +1244,11 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
     }
 
     .carousel-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.8rem;
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        font-size: 1.75rem;
+        flex-shrink: 0;
     }
     
     .prev-btn {
