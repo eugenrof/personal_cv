@@ -1125,12 +1125,10 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
 .carousel-counter {
     margin-top: 12px;
     text-align: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    opacity: 0.7;
-    user-select: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: var(--accent-color);
 }
 
 .carousel-viewport::-webkit-scrollbar {
