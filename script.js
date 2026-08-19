@@ -527,9 +527,10 @@ if (canvas) {
 
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
 
+      // Updated to use mustard/gold theme colors instead of blue
       ctx.fillStyle = document.body.classList.contains("light")
-        ? "rgba(58, 134, 255, 0.2)"
-        : "rgba(76, 201, 240, 0.4)";
+        ? "rgba(179, 134, 0, 0.25)"
+        : "rgba(229, 184, 11, 0.4)";
 
       ctx.fill();
     }
@@ -556,9 +557,10 @@ if (canvas) {
         if (dist < 120) {
           ctx.beginPath();
 
+          // Updated connecting lines to match the mustard accent cleanly
           ctx.strokeStyle = document.body.classList.contains("light")
-            ? "rgba(58,134,255," + (0.15 - dist / 400) + ")"
-            : "rgba(58,134,255," + (0.3 - dist / 400) + ")";
+            ? "rgba(179,134,0," + (0.15 - dist / 400) + ")"
+            : "rgba(229,184,11," + (0.25 - dist / 500) + ")";
 
           ctx.lineWidth = 1;
 
