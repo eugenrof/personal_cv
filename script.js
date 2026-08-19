@@ -297,35 +297,35 @@ document.addEventListener("DOMContentLoaded", () => {
       const scrollLeft = viewport.scrollLeft;
       const maxScrollLeft = viewport.scrollWidth - viewport.clientWidth;
 
-    /**
-    * Previous button
-    */
-    if (scrollLeft <= 2) {
+      /**
+       * Previous button
+       */
+      if (scrollLeft <= 2) {
         prevBtn.setAttribute("disabled", "true");
         prevBtn.style.visibility = "hidden";
         prevBtn.style.opacity = "0";
         prevBtn.style.cursor = "not-allowed";
-    } else {
+      } else {
         prevBtn.removeAttribute("disabled");
         prevBtn.style.visibility = "visible";
         prevBtn.style.opacity = "1";
         prevBtn.style.cursor = "pointer";
-    }
+      }
 
-    /**
-    * Next button
-    */
-    if (scrollLeft >= maxScrollLeft - 2) {
+      /**
+       * Next button
+       */
+      if (scrollLeft >= maxScrollLeft - 2) {
         nextBtn.setAttribute("disabled", "true");
         nextBtn.style.visibility = "hidden";
         nextBtn.style.opacity = "0";
         nextBtn.style.cursor = "not-allowed";
-    } else {
+      } else {
         nextBtn.removeAttribute("disabled");
         nextBtn.style.visibility = "visible";
         nextBtn.style.opacity = "1";
         nextBtn.style.cursor = "pointer";
-    }
+      }
 
       /**
        * Determine active slide.

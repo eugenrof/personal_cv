@@ -1205,11 +1205,11 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
 }
 
 .prev-btn {
-    left: 4px;
+    left: 2px;
 }
 
 .next-btn {
-    right: 4px;
+    right: 2px;
 }
 
 @media (max-width: 768px) {
