@@ -1195,13 +1195,13 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
     z-index: 10;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-btn:hover {
     background: var(--accent-color);
     color: #fff;
-    box-shadow: 0 0 15px var(--accent-color);
+    box-shadow: 0 0 8px var(--accent-color);
 }
 
 .prev-btn {
@@ -1258,11 +1258,11 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
     }
     
     .prev-btn {
-        left: 2px;
+        left: 8px;
     }
 
     .next-btn {
-        right: 2px;
+        right: 8px;
     }
 }
 
