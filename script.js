@@ -284,6 +284,17 @@ if (toggleInput) {
  * The counter treats the actual right edge of the carousel
  * as the final slide. This prevents situations where the last
  * card is fully visible but the counter still reports 07 / 09.
+ *
+ * NOTE ON FOCUS FIX:
+ * We no longer set the real `disabled` attribute on the nav
+ * buttons. Toggling `disabled` on a focused element forces the
+ * browser to immediately strip focus and scroll the next
+ * focusable ancestor into view — on iOS Safari this produces a
+ * visible, jarring jump right when a button reaches its edge
+ * state (start or end of the carousel). Using `aria-disabled`
+ * plus `pointer-events: none` gives the same "can't interact
+ * with this" behavior and keeps it accessible, without the
+ * browser forcibly yanking focus.
  */
 document.addEventListener("DOMContentLoaded", () => {
   const viewport = document.querySelector(".carousel-viewport");
@@ -301,12 +312,15 @@ document.addEventListener("DOMContentLoaded", () => {
        * Previous button
        */
       if (scrollLeft <= 2) {
-        prevBtn.setAttribute("disabled", "true");
+        prevBtn.setAttribute("aria-disabled", "true");
+        prevBtn.style.pointerEvents = "none";
         prevBtn.style.visibility = "hidden";
         prevBtn.style.opacity = "0";
         prevBtn.style.cursor = "not-allowed";
+        prevBtn.blur();
       } else {
-        prevBtn.removeAttribute("disabled");
+        prevBtn.removeAttribute("aria-disabled");
+        prevBtn.style.pointerEvents = "auto";
         prevBtn.style.visibility = "visible";
         prevBtn.style.opacity = "1";
         prevBtn.style.cursor = "pointer";
@@ -316,12 +330,15 @@ document.addEventListener("DOMContentLoaded", () => {
        * Next button
        */
       if (scrollLeft >= maxScrollLeft - 2) {
-        nextBtn.setAttribute("disabled", "true");
+        nextBtn.setAttribute("aria-disabled", "true");
+        nextBtn.style.pointerEvents = "none";
         nextBtn.style.visibility = "hidden";
         nextBtn.style.opacity = "0";
         nextBtn.style.cursor = "not-allowed";
+        nextBtn.blur();
       } else {
-        nextBtn.removeAttribute("disabled");
+        nextBtn.removeAttribute("aria-disabled");
+        nextBtn.style.pointerEvents = "auto";
         nextBtn.style.visibility = "visible";
         nextBtn.style.opacity = "1";
         nextBtn.style.cursor = "pointer";
