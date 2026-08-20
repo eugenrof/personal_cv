@@ -364,6 +364,8 @@ document.addEventListener("DOMContentLoaded", () => {
         left: -330,
         behavior: "smooth",
       });
+
+      prevBtn.blur();
     });
 
     /**
@@ -374,6 +376,8 @@ document.addEventListener("DOMContentLoaded", () => {
         left: 330,
         behavior: "smooth",
       });
+
+      nextBtn.blur();
     });
 
     /**
