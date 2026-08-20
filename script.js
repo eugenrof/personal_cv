@@ -357,6 +357,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /**
+     * Brief yellow "tap" flash that clears itself after a
+     * short delay, regardless of how long the button was pressed.
+     */
+    function flashTapActive(btn) {
+      btn.classList.remove("tap-active");
+
+      // Force reflow so the removed class re-triggers cleanly
+      // if the button is tapped again quickly.
+      void btn.offsetWidth;
+
+      btn.classList.add("tap-active");
+
+      clearTimeout(btn._tapTimeout);
+
+      btn._tapTimeout = setTimeout(() => {
+        btn.classList.remove("tap-active");
+      }, 500);
+    }
+
+    /**
      * Previous button
      */
     prevBtn.addEventListener("click", () => {
@@ -365,6 +385,7 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
       });
 
+      flashTapActive(prevBtn);
       prevBtn.blur();
     });
 
@@ -377,6 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
       });
 
+      flashTapActive(nextBtn);
       nextBtn.blur();
     });
 

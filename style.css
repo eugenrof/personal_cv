@@ -1217,15 +1217,10 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
     justify-content: center;
     cursor: pointer;
     z-index: 10;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.carousel-btn:hover {
-    background: var(--accent-color);
-    color: #16181a;
-    box-shadow: 0 0 8px var(--accent-color);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .prev-btn {
@@ -1234,6 +1229,26 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
 
 .next-btn {
     right: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .carousel-btn:hover {
+        background: var(--accent-color);
+        color: #16181a;
+        box-shadow: 0 0 8px var(--accent-color);
+    }
+}
+
+/* Tap feedback for touch devices: flashes yellow on tap, then fades back on its own */
+.carousel-btn.tap-active {
+    background: var(--accent-color);
+    color: #16181a;
+    box-shadow: 0 0 8px var(--accent-color);
+    transition: background 0.05s ease, color 0.05s ease, box-shadow 0.05s ease;
+}
+
+.carousel-btn:focus:not(:focus-visible) {
+    outline: none;
 }
 
 @media (max-width: 768px) {
@@ -1280,7 +1295,7 @@ button, .tab, .theme-switch-wrapper, .mobile-menu-toggle {
         font-size: 1.25rem;
         flex-shrink: 0;
     }
-    
+
     .prev-btn {
         left: 8px;
     }
@@ -1596,10 +1611,6 @@ body.light .contact-section .btn-terminal-submit:hover {
 }
 
 body.light .contact-section .btn-terminal-submit .btn-prompt {
-    color: #f39c12;
-}
-
-body.light .contact-section .btn-terminal-submit:hover .btn-prompt {
     color: #ffffff;
 }
 
