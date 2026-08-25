@@ -385,6 +385,12 @@ header h1 {
     pointer-events: none;
 }
 
+img {
+  /* Prevent text/element selection highlighting */
+  -webkit-user-select: none; /* Safari */
+  user-select: none;        /* Standard */
+}
+
 .contact-icons img {
     position: relative;
     z-index: 1;
